@@ -10,11 +10,11 @@ type IOHelper() =
     static member GetInput<'T>(?inputText : string) = 
         let inputText = (defaultArg inputText) ""
         
-        if not (String.IsNullOrEmpty(inputText)) then
-            Console.WriteLine (inputText)
+        if (inputText <> "") then
+            IOHelper.Display(inputText)
 
         let mutable input = Console.ReadLine()
 
-        (Convert.ChangeType(input, typeof<'T>)) :?> 'T
+        Convert.ChangeType(input, typeof<'T>) :?> 'T
 
     
