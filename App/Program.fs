@@ -1,6 +1,7 @@
-﻿open HelloModule
+﻿open Ack
+open FunctionOperators
+open HelloModule
 open IOModule
-open Ack
 
 [<EntryPoint>]
 let main argv =
@@ -9,13 +10,14 @@ let main argv =
     IOHelper.Display("Opções:\n")
     IOHelper.Display("1: Hello World")
     IOHelper.Display("2: Função Ackermann")
+    IOHelper.Display("3: Encadeando funções")
 
     let opt = IOHelper.GetInput<int> "Selecione uma opção: "
 
     match opt with
     | 1 -> 
         let name = IOHelper.GetInput<string> "Input: "
-        SayHelloCase name true
+        SayHelloCase(name, true)
 
     | 2 ->
         let m = IOHelper.GetInput<int>("Digite o valor de M")
@@ -23,8 +25,11 @@ let main argv =
         let res = Ack m n
 
         IOHelper.Display $"Resultado: {res}"
+
+    | 3 ->
+        FunctionOps.FunctionComposition
     
     | _ ->
         IOHelper.Display "Opção inválida"
 
-    0 // Return 0
+    0
