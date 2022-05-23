@@ -4,8 +4,7 @@ open System
 
 type IOHelper() =
 
-    static member Display(inputText : string) =
-        printfn $"{inputText}"
+    static member Display(inputText : string) = printfn "%s" inputText
 
     static member GetInput<'T>(?inputText : string) = 
         let inputText = defaultArg inputText ""
