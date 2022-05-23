@@ -1,13 +1,13 @@
 ﻿open HelloModule
-open InputModule
+open IOModule
 
-Display("Usando F#")
-Display("Selecione uma opção: ")
-Display("1: Hello World")
+IOHelper.Display("Usando F#")
+IOHelper.Display("Selecione uma opção: ")
+IOHelper.Display("1: Hello World")
 
-match GetInput("") with
-| "1" -> 
-    let name = GetInput("Input: ")
+match IOHelper.GetInput<int>("") with
+| 1 -> 
+    let name = IOHelper.GetInput<string>("Input: ")
     SayHelloCase name true
 | _ ->
-    Display("Opção inválida")
+    IOHelper.Display("Opção inválida")
