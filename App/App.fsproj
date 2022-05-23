@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types\BaseType.fs" />
+    <Compile Include="Types\Person.fs" />
+    <Compile Include="Modules\HelloModule.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
