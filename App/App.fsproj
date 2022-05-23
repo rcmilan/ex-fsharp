@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Functions\Ack.fs" />
     <Compile Include="Types\BaseType.fs" />
     <Compile Include="Types\Person.fs" />
     <Compile Include="Modules\IOModule.fs" />

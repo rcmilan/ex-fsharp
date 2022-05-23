@@ -8,12 +8,12 @@ type IOHelper() =
         printfn $"{inputText}"
 
     static member GetInput<'T>(?inputText : string) = 
-        let inputText = (defaultArg inputText) ""
+        let inputText = defaultArg inputText ""
         
         if (inputText <> "") then
-            IOHelper.Display(inputText)
+            IOHelper.Display inputText
 
-        let mutable input = Console.ReadLine()
+        let input = Console.ReadLine()
 
         Convert.ChangeType(input, typeof<'T>) :?> 'T
 
