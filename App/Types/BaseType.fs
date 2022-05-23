@@ -2,5 +2,7 @@
 
 open System
 
-type BaseType() = 
-    member _.Id = Guid.NewGuid
+[<AbstractClass>]
+type public BaseType() = 
+
+    abstract Id : Guid with get

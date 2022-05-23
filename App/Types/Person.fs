@@ -2,6 +2,9 @@
 
 open BaseType
 
-type Person(name : string) =
+type public Person(name : string) =
     inherit BaseType()
+
+    override _.Id = System.Guid.NewGuid()
+
     member _.Name = name
