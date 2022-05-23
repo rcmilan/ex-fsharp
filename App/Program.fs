@@ -1,7 +1,6 @@
 ﻿open HelloModule
-open System
+open InputModule
 
-printfn "Input: "
-let name = Console.ReadLine()
+let name = GetInput("Input: ")
 
 SayHelloCase name true

@@ -8,6 +8,7 @@
   <ItemGroup>
     <Compile Include="Types\BaseType.fs" />
     <Compile Include="Types\Person.fs" />
+    <Compile Include="Modules\InputModule.fs" />
     <Compile Include="Modules\HelloModule.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
