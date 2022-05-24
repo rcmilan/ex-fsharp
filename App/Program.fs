@@ -27,7 +27,7 @@ let main argv =
         IOHelper.Display $"Resultado: {res}"
 
     | 3 ->
-        FunctionOps.FunctionComposition
+        FunctionOpers.FuncPipe2
     
     | _ ->
         IOHelper.Display "Opção inválida"
