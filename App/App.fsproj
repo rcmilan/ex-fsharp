@@ -9,6 +9,7 @@
     <Compile Include="Functions\Parametrization.fs" />
     <Compile Include="Functions\FunctionOperators.fs" />
     <Compile Include="Functions\Ack.fs" />
+    <Compile Include="Types\TypeComposition.fs" />
     <Compile Include="Types\BaseType.fs" />
     <Compile Include="Types\Person.fs" />
     <Compile Include="Modules\IOModule.fs" />
